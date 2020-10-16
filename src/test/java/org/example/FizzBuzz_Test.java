@@ -1,5 +1,4 @@
 package org.example;
-
 import org.junit.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -9,7 +8,7 @@ public class FizzBuzz_Test {
     @Test
     public void should_return_number_when_is_not_3_or_5_multiple(){
         assertThat(fizzBuzz.of(1)).isEqualTo("1");
-        assertThat(fizzBuzz.of(1)).isEqualTo("2");
+        assertThat(fizzBuzz.of(2)).isEqualTo("2");
     }
 
     @Test
@@ -30,10 +29,5 @@ public class FizzBuzz_Test {
         assertThat(fizzBuzz.of(15)).isEqualTo("FizzBuzz");
         assertThat(fizzBuzz.of(30)).isEqualTo("FizzBuzz");
     }
-    public static class FizzBuzz {
 
-        public String of(int i) {
-            return String.valueOf(i);
-        }
-    }
 }
